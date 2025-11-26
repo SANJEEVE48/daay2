@@ -1,0 +1,112 @@
+body {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #9face6);
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 850px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  padding: 40px 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+.container h1 {
+  color: #007BFF;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+textarea {
+  width: 100%;
+  height: 130px;
+  font-size: 1.1rem;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  resize: vertical;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+}
+button {
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  background: linear-gradient(135deg, #007BFF, #00d4ff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0056b3, #00aaff);
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+#output {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: center;
+}
+#output img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  border: 2px solid #eee;
+  padding: 10px;
+  background: #fdfdfd;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#output img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  border-color: #007BFF;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 25px 15px;
+  }
+
+  textarea {
+    height: 100px;
+    font-size: 1rem;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #output img {
+    width: 100px;
+    height: 100px;
+  }
+}
